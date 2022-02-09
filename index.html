@@ -4,67 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <title>Document</title>
+    <title>Rock Paper Scissors Lizard Spock</title>
 </head>
 <body>
-    <!-- Title Block -->
-    <section class="title-block">
-        <ul>
-            <li>Rock</li>
-            <li>Paper</li>
-            <li>Scissors</li>
-            <li>Lizard</li>
-            <li>Spock</li>
-        </ul>
-        <div class="score">
-            <div class="score-title"></div>
-            <div class="score-count"></div>
+    
+    <span>YOUR CHOICE</span>
+    <div id="user-options">
+        <div>
+            <input type="radio" id="1" name="option" class="user-option">
+            <label for="1">⛰️</label>
         </div>
-    </section>
-
-    <!-- User Choice -->
-    <section class="user-choice">
-        <div class="game-card-scissors"><i class="fas fa-hand-scissors"></i></div>
-        <div class="game-card-paper"><i class="fas fa-hand-paper"></i></div>
-        <div class="game-card-rock"><i class="fas fa-hand-rock"></i></div>
-        <div class="game-card-lizard"><i class="fas fa-hand-lizard"></i></div>
-        <div class="game-card-spock"><i class="fas fa-hand-spock"></i></div>
-    </section>
-
-    <div class="section picked hidden">
-        <div class="choice">
-            <p>You Picked</p>
-            <div class="user-pick"></div>
+        <div>
+            <input type="radio" id="2" name="option" class="user-option">
+            <label for="2">✂️</label>
         </div>
-        <div class="result hidden">
-            <div class="title">You Loose</div>
-            <button>Play Again</button>
+        <div>
+            <input type="radio" id="3" name="option" class="user-option">
+            <label for="3">🧻</label>
         </div>
-        <div class="choice">
-            <p>The House Picked</p>
-            <div class="pc-pick"></div>
+        <div>
+            <input type="radio" id="4" name="option" class="user-option">
+            <label for="4">🖖</label>
         </div>
-
-    </div>
-
-    <button class="rules-button">Rules</button>
-    <div class="modal-bg"></div>
-    <div class="modal">
-        <span class="close">
-            <img src="./assets/images/RPSSL.png" alt="game rules">
-        </span>
-        <title>Rules</title>
-        <div class="content">
-            <!-- <img src="./assets/images/RPSSL.png" alt=" bonus game rules"> -->
+        <div>
+            <input type="radio" id="5" name="option" class="user-option">
+            <label for="5">🦎</label>
         </div>
     </div>
-
-        <div class="attribution">
-            <p>Challenge by frontendmentor<a href="'https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH"></a>
-                <script src="./assets/js/script.js"></script>
+    <span>COMPUTER CHOICE</span>
+    <div id="computer-choice">💭</div>
+    <button id="play">▶️</button>
+    <div id="output"></div>
 </body>
 </html>
-
