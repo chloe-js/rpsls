@@ -1,3 +1,54 @@
 html {
     font-size: 42px
 }
+body {
+    color: white;
+    background-color: #3A3743;
+    height: 100vh;
+    text-align: center;
+    padding: 10px;
+}
+
+.playerChoice {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #3A3743;
+    border: 10px solid;
+    width: 100px;
+    height: 100px;
+    font-size: 3.2rem;
+    margin: 0 30px;
+    transition: all 0.5s;
+}
+
+.playerChoice:hover {
+    transform: scale(1.1);
+    background-color: currentcolor;
+}
+
+div {
+    background-color: #565264;
+    margin: 5px auto;
+    width: 60%;
+    font-size: 1.2rem;
+}
+
+#rock {
+    color: #ff8080;
+}
+
+#paper {
+    color: #ffdd55;
+}
+
+#scissors {
+    color: #e580ff;
+}
+
+#lizard {
+    color: #87de87;
+}
+
+#spock {
+    color: #80b3ff;
+}

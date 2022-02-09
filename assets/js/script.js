@@ -15,11 +15,11 @@ const OPTIONS = {
     5: LIZARD
 };
 const OPTIONS2EMOJI = {
-    1: '⛰️',
-    2: '✂️',
-    3: '🧻',
-    4: '🖖',
-    5: '🦎'
+    1: '<i class="fas fa-hand-rock"></i>',
+    2: '<i class="fas fa-hand-scissors"></i>',
+    3: '<i class="fas fa-hand-paper"></i>',
+    4: '<i class="fas fa-hand-spock"></i>',
+    5: '<i class="fas fa-hand-lizard"></i>'
 };
 
 let userChoiceID = '';
@@ -50,7 +50,8 @@ window.onload = () => {
             case `${PAPER}-${PAPER}`:
             case `${SPOCK}-${SPOCK}`:
             case `${LIZARD}-${LIZARD}`:
-                result = 'TIE 👔'
+                result = 'Its a TIE'
+                alert(`Its a Tie! you both chose:\n${userChoice} Try again!`)
                 break;
             case `${ROCK}-${SCISSORS}`:
             case `${ROCK}-${LIZARD}`:
@@ -62,7 +63,9 @@ window.onload = () => {
             case `${SPOCK}-${SCISSORS}`:
             case `${LIZARD}-${PAPER}`:
             case `${LIZARD}-${SPOCK}`:
-                result = 'COMPUTER WIN 😔💔 🤖🥇'
+                
+                result = 'You Loose'
+                alert(`You lose!\n${computerChoice} beats ${userChoice}`);
                 break;
             case `${ROCK}-${PAPER}`:
             case `${ROCK}-${SPOCK}`:
@@ -74,10 +77,13 @@ window.onload = () => {
             case `${SPOCK}-${LIZARD}`:
             case `${LIZARD}-${ROCK}`:
             case `${LIZARD}-${SCISSORS}`:
-                result = 'YOU WIN ☺️🥇 🤖💔'
+                result = 'YOU WIN !'
+                alert(`You win!\n${userChoice} beats ${computerChoice}`)
                 break;
             default:
-                result = 'SOMETHING WRONG. TRY AGAIN. 🐛'
+                result = 'SOMETHING WRONG. TRY AGAIN.'
+                alert(`'SOMETHING WRONG. TRY AGAIN.'`)
+                break;
         }
 
         output.innerHTML = result;
